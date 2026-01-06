@@ -1,0 +1,109 @@
+/* التصميم العام */
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background:#eef2f6;
+  color:#222;
+}
+
+/* الرأس */
+header{
+  background:#0f2a44;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+}
+header h1{ margin:0; font-size:28px; }
+header p{ margin:5px 0 0; font-size:14px; opacity:0.9; }
+
+/* القائمة */nav{
+  background:#0b1f33;
+  display:flex;           
+  flex-wrap: nowrap;        /* منع انتقال الروابط لسطر جديد */
+  justify-content:center; 
+  overflow-x:auto;          /* إذا الشاشة ضيقة يظهر شريط تمرير أفقي */
+  white-space: nowrap;      /* منع التفاف النص داخل الروابط */
+}
+
+nav a{
+  color:#fff;
+  padding:14px 20px;
+  margin:2px;             
+  display:inline-block;
+  text-decoration:none;
+  font-size:14px;
+  flex:0 0 auto;            /* كل رابط يأخذ حجمه الطبيعي */
+}
+
+nav a:hover{ 
+  background:#163a5c; 
+}
+
+
+/* المحتوى */
+.container{
+  width:85%;
+  margin:30px auto;
+  background:#fff;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 0 12px rgba(0,0,0,0.08);
+}
+
+h2{
+  color:#0f2a44;
+  border-right:4px solid #0f2a44;
+  padding-right:10px;
+  margin-top:30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse; /* إزالة الفراغات بين الخلايا */
+  margin-top: 20px;
+  text-align: center; /* يجعل كل النصوص في منتصف كل خلية */
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+th, td {
+  padding: 12px; /* مسافة داخل الخلايا */
+  border: 1px solid #ddd; /* خطوط بين الخلايا */
+  vertical-align: middle; /* يضمن أن النص عمودي في المنتصف */
+}
+
+th {
+  background-color: #0f2a44; /* لون رسمي */
+  color: #fff;
+}
+
+
+/* الخطابات */
+.letter{
+  background:#f8f9fb;
+  padding:20px;
+  border:1px solid #ccc;
+  margin-top:15px;
+}
+.signature{ margin-top:30px; text-align:left; }
+.stamp{ margin-top:10px; font-style:italic; color:#555; }
+
+/* الصور */
+img{ width:11%; margin-top:15px; border-radius:5px; }
+
+/* الفوتر */
+footer{
+  background:#0f2a44;
+  color:#fff;
+  text-align:center;
+  padding:12px;
+  font-size:13px;
+  margin-top:30px;
+}
+
+/* النماذج */
+input, select, textarea, button{
+  font-family: inherit;
+  margin-bottom:10px;
+}
+button{
+  cursor:pointer;
+}
